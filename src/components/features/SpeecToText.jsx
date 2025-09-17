@@ -26,6 +26,10 @@ export default function SpeechToText(){
         else interim += res[0].transcript
       }
       setText((final + ' ' + interim).trim())
+      if (['stop captions', 'stop'].includes(interim?.trim())) {
+        rec.stop()
+        setListening(false)
+      }
     }
     rec.onerror = (e) => {
       console.error('Speech error', e)
@@ -43,6 +47,7 @@ export default function SpeechToText(){
       try {
         rec.start()
         setListening(true)
+        setText('')
       } catch(e){
         console.warn('Could not start recognition', e)
       }
