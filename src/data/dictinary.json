@@ -1,0 +1,8 @@
+[
+    { "id": "hello", "word": "Hello", "video": "/assets/signs/hello.mp4", "category": "greetings" },
+    { "id": "thank_you", "word": "Thank you", "video": "/assets/signs/thank_you.mp4", "category": "polite" },
+    { "id": "please", "word": "Please", "video": "/assets/signs/please.mp4", "category": "polite" },
+    { "id": "yes", "word": "Yes", "video": "/assets/signs/yes.mp4", "category": "basic" },
+    { "id": "no", "word": "No", "video": "/assets/signs/no.mp4", "category": "basic" }
+  ]
+  
